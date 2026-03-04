@@ -33,6 +33,27 @@ npm run build
 ```
 The output will be in the `dist/` folder.
 
+## 🚀 Deployment to Netlify
+
+This project is optimized for Netlify. Follow these steps to deploy:
+
+1.  **Push to GitHub**: Push your code to a GitHub repository.
+2.  **Connect to Netlify**:
+    *   Log in to [Netlify](https://app.netlify.com/).
+    *   Click **"Add new site"** > **"Import an existing project"**.
+    *   Select your GitHub repository.
+3.  **Build Settings**:
+    *   **Build Command**: `npm run build`
+    *   **Publish directory**: `dist`
+4.  **Environment Variables**:
+    *   Go to **Site settings** > **Environment variables**.
+    *   Add a new variable:
+        *   Key: `API_KEY`
+        *   Value: *Your Gemini API Key*
+5.  **Deploy**: Click **"Deploy site"**.
+
+The `netlify.toml` file included in the root handles all SPA redirects automatically.
+
 ## Features
 - **Elite UI**: Custom Tailwind CSS design with high-impact fitness imagery.
 - **AI Coach**: Interactive fitness consultant powered by `gemini-3-flash-preview`.
