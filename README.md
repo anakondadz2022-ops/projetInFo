@@ -1,11 +1,40 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# Iron Forge Gym - Local Setup Guide
 
-  <h1>Built with AI Studio</h2>
+This project is a high-performance fitness landing page with an AI Coach integrated using the Google Gemini API.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- A Google Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Getting Started
 
-</div>
+1. **Install Dependencies**
+   Open your terminal in the project root and run:
+   ```bash
+   npm install
+   ```
+
+2. **Configure Environment Variables**
+   - Create a file named `.env` in the root directory.
+   - Copy the content from `.env.example` into `.env`.
+   - Replace `your_gemini_api_key_here` with your actual API key.
+
+3. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+   The application will be running at `http://localhost:5173`.
+
+## Building for Production
+To create an optimized build for deployment:
+```bash
+npm run build
+```
+The output will be in the `dist/` folder.
+
+## Features
+- **Elite UI**: Custom Tailwind CSS design with high-impact fitness imagery.
+- **AI Coach**: Interactive fitness consultant powered by `gemini-3-flash-preview`.
+- **Training Calendar**: Dynamic workout schedule visualization.
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices.

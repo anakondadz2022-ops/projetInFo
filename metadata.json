@@ -1,0 +1,8 @@
+{
+  "name": "Iron Forge Gym - Elite Fitness",
+  "description": "A premium fitness landing page and training management app featuring high-end aesthetics, a dynamic training calendar, and an AI-powered fitness consultant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
